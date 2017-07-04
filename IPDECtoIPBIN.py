@@ -1,6 +1,5 @@
 #IPDECtoIPBIN
 #Made By Buff_r (JD)
-from decimal import *
 
 print "IPDECtoIPBIN"
 print "Made by Buff_r (JD)"
