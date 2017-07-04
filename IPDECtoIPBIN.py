@@ -1,5 +1,6 @@
 #IPDECtoIPBIN
 #Made By Buff_r (JD)
+#from decimal import *
 
 print "IPDECtoIPBIN"
 print "Made by Buff_r (JD)"
@@ -10,6 +11,11 @@ ip_byte_bin = []
 ip_split = ip.split('.')
 for i in ip_split:
 	ip_byte_list.append(i)
+	if i > "255":
+		print "Error: Illegal byte in address."
+		quit()
+	else: 
+		pass
 	i = int(i)
 	dec2bin = "{0:b}".format(i)
 	ip_byte_bin.append(dec2bin)
