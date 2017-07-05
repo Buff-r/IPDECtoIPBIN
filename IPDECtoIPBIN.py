@@ -16,12 +16,12 @@ ip_byte_bin = []
 ip_split = ip.split('.')
 for i in ip_split:
 	ip_byte_list.append(i)
-	if i > "255":
+	i = int(i)
+	if i > 255:
 		print "Error: Illegal byte in address."
 		quit()
 	else: 
 		pass
-	i = int(i)
 	dec2bin = "{0:b}".format(i)
 	bitcount = len(dec2bin)
 	if bitcount < 8:
