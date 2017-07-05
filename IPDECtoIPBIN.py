@@ -8,7 +8,7 @@ print "Made by Buff_r (JD)"
 try:
 	ip = sys.argv[1]
 except IndexError:
-	print "Example: ipdectoipbin <IP Address>"
+	print "Example: ipdectoipbin.py <IP Address>"
 	quit()
 
 ip_byte_list = []
