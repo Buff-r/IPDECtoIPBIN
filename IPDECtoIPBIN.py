@@ -10,7 +10,12 @@ try:
 except IndexError:
 	print "Example: ipdectoipbin.py <IP Address>"
 	quit()
-
+iplen = len(ip)
+if iplen > 15:
+	print "Error: Provided IP too long."
+	quit()
+else:
+	pass
 ip_byte_list = []
 ip_byte_bin = []
 ip_split = ip.split('.')
@@ -44,6 +49,6 @@ print decbyte1 + ' -> ' +  binbyte1
 print decbyte2 + ' -> ' +  binbyte2
 print decbyte3 + ' -> ' +  binbyte3
 print decbyte4 + ' -> ' +  binbyte4
-print '_'*40
+print '_'*41
 print 'DEC: ', ip
 print 'BIN: ', ipbin
